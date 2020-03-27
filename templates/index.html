@@ -1,0 +1,55 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Medical appointment</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">Medical appointment</h1>
+
+      <p class="lead">Support our everyday heroes of the pandemic</p>
+
+      <div class="alert alert-warning" role="alert">
+        <b>New Coronavirus</b><br>
+        In order to reduce the workload of the medical staff in the current COVID19 situation, we ask you to request a doctor's appointment online here.
+      </div>
+
+      <div style="background-color: #f5f5f5; padding-top: 1px; padding-left: 12px; padding-bottom: 12px; padding-right: 12px;">
+        <h3>Search medical practice</h3>
+        <form action="search-result">
+          <div class="form-group">
+            <label for="zipcode">ZIP Code</label>
+            <input type="text" class="form-control" id="zipcode" aria-describedby="zipcode" placeholder="Enter ZIP Code">
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+    
+    
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+{% endblock%}

@@ -1,0 +1,64 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title>Medical appointment</title>
+
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <h1 class="mt-5">Medical appointment</h1>
+
+    <h3 class="mt-5">Select medical practice</h3>
+    <br><br>
+    <table class="table">
+      <tbody>
+        {% if result %}
+        <tr>
+          <th>ID</th>
+          <th>Medical Office</th>
+          <th>ZIP Code</th>
+          <th></th>
+        </tr>
+        {% for row in result %}
+        <tr>
+          <td> {{ row.id }}</td>
+          <td> {{ row.name }}</td>
+          <td> {{ row.zip_code }}</td>
+          <td>
+            <button type="button" class="btn btn-primary">Select</button>
+          </td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+      </tbody>
+    </table>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+{% endblock%}
