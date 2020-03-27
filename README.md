@@ -1,3 +1,3 @@
 # PatientZero
 
-![](readme/home.png)
+![](readme/home2.png)
