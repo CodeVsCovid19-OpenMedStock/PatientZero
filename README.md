@@ -16,7 +16,9 @@ The Starter Project shows how to
 - use the template engine
 - and connect to a mysql db.
 
+Home
 ![](readme/home2.png)
 
+Search Results
 ![](readme/search_results.png)
 
